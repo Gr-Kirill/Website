@@ -1,8 +1,8 @@
 # My website is for finding common interests
 
-# Python(Flask+SQLAlchemy)
+## Python(Flask+SQLAlchemy)
 
-# HTML + CSS + JS
+## HTML + CSS + JS
 
 ## Also: Logging
 

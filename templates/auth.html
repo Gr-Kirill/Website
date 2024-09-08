@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1.0">
+        <title>Authorization</title>
+
+        <link rel="stylesheet" href="../static/style.css">
+    </head>
+    <body>
+        <div>
+            <div class="auth_header">
+                <div>
+                    <h1>HELLO, ITS MY WEB-PAGE</h1>
+                    <h2 style="padding: 2%;">Do you want to be friends with me?</h2>
+                </div>
+            </div>
+            <form method="post" class="auth" action="{{ url_for('auth') }}" id="auth_main">
+                <div class="block">
+                    <label for="name">Введи имя: </label>
+                    <input type="text" name="name" required>
+                </div>
+                <div class="block">
+                    <label for="surname">Введи фамилию: </label>
+                    <input type="text" name="surname">
+                </div>
+                <div>
+                    <input type="submit" value="Отправить" form="auth_main">
+                </div>
+            </form>
+            <div class="note">
+                <p id="main_note">
+                    *В конце ты увидишь нашу совместимость по интересам и поймешь, сможем ли мы подружиться.
+                </p>
+            </div>
+
+        </div>
+    </body>
+</html>

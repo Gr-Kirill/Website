@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+        <title>Questions</title>
+    </head>
+    <body>
+        <div class="main_question">
+            <div>
+                ЗДЕСЬ БУДЕТ ВОПРОС.
+            </div>
+            <div>
+                ЗДЕСЬ БУДУТ ВАРИАНТЫ ОТВЕТОВ.
+            </div>
+        </div>
+        <div id="openUserInf">
+            <button id="openButton">Открыть</button>
+            <div id="infUser">
+                <h2>Информация о пользователе</h2>
+                <div class="listInf">
+                    <label for="infName">Имя: </label>
+                    <p id="infName">{{ name }}</p>
+                </div>
+                <div class="listInf">
+                    <label for="infSurname">Фамилия: </label>
+                    <p id="infSurname">{{ surname }}</p>
+                </div>
+                <div class="listInf">
+                    <label for="infAge">Возраст: </label>
+                    <p id="infAge">{{ age }}</p>
+                </div>
+                <div class="listInf">
+                    <label for="infCity">Город: </label>
+                    <p id="infCity">{{ city }}</p>
+                </div>
+            </div>
+            <div>
+                <button id="closeButton">Закрыть</button>
+            </div>
+        </div>
+
+        <script src="static/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+        <title>Start</title>
+    </head>
+    <body>
+        <div>
+            <h3>Давай начнем с основного. Расскажи о себе.</h3>
+        </div>
+        <div class="input_info">
+            <form method = "post" action="{{ url_for('start') }}">
+                <div>
+                    <label for="name">Введи имя: </label>
+                    <input type="text" name="name" value = "{{ name }}" required>
+                </div>
+                <div>
+                    <label for="surname">Введи фамилию: </label>
+                    <input type="text" name="surname" value = "{{ surname }}">
+                </div>
+                <div>
+                    <label for="Возраст">Введи возраст: </label>
+                    <input type="number" name="age" min="0" max="105" required>
+                </div>
+                <div>
+                    <label for="Город">Введи город: </label>
+                    <input type="text" name="city">
+                </div>
+                <div>
+                    <label for="met_already">Знакомы ли мы лично? </label>
+                    <input type="radio" name="met_already" value="yes" class="radio-input" required>
+                    Да
+                    <input type="radio" name="met_already" value="no" class="radio-input" required>
+                    Нет
+                </div>
+                <div>
+                    <input type="submit" value="Далее">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

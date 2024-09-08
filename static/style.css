@@ -1,0 +1,62 @@
+h3 {
+    text-align: center;
+}
+
+.auth_header {
+    text-align: center;
+    padding: 2%;
+}
+
+.auth {
+    
+    text-align: center;
+}
+
+.input_info {
+    display: grid;
+    place-items: center;
+}
+
+.note {
+    text-align: center;
+    font-size: small;
+}
+
+.age_input {
+    text-align: center;
+}
+
+#next {
+    text-align: center;
+}
+
+.main_question {
+    width: 80%;
+    margin-right: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100%;
+}
+
+/* Для окна справа */
+#OpenUserInf {
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    margin-left: 20%;
+    top: 0;
+    right: 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.listInf {
+    display: flex;
+    align-items: center;
+}
+
+.listInf label {
+    margin-right: 10px; /* Отступ между label и p */
+}
+
+
